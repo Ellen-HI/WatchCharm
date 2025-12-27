@@ -5,208 +5,303 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WatchCharm</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">WatchCharm</a>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Catalog</a></li>
-                <li><a href="">Sale</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contact Us</a></li>
+    <header class="header">
+        <div class="container header-container">
+            <a class="header-logo" href="./index.html">WatchCharm</a>
+            <nav class="header-nav">
+
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-link" href="">Home</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#about">About Us</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#catalog">Catalog</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#sale">Sale</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#reviews">Reviews</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <ul class="header-social-list">
+                <li class="header-social-item">
+                    <a class="header-social-link" href="" target="_blank" aria-label="facebook link">
+                        <img src="./images/facebook.svg" width="36" height="36" alt="facebook">
+                    </a>
+                </li>
+                <li class="header-social-item">
+                    <a class="header-social-link" href="" target="_blank" aria-label="instagram link">
+                        <img src="./images/instagram.svg" width="36" height="36" alt="instagram">
+                    </a>
+                </li>
+                <li class="header-social-item">
+                    <a class="header-social-link" href="" target="_blank" aria-label="youtube link">
+                        <img src="./images/youtube.svg" width="36" height="36" alt="youtube">
+                    </a>
+                </li>
             </ul>
-        </nav>
-        <ul>
-            <li>
-                <a href="" target="_blank" aria-label="facebook link">
-                    <img src="./images/facebook.svg" width="36" height="36" alt="facebook">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank" aria-label="instagram link">
-                    <img src="./images/instagram.svg" width="36" height="36" alt="instagram">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank" aria-label="youtube link">
-                    <img src="./images/youtube.svg" width="36" height="36" alt="youtube">
-                </a>
-            </li>
-        </ul>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Welcome to our collection of premium watches</h1>
-            <p>Our watches are not just timepieces, but also an expression of your personality and lifestyle. From
-                classic
-                designs to
-                modern ones, we have a watch to suit every taste and occasion.
-            </p>
-            <img src="./images/photo-people.png" alt="team" width="146" height="60">
-            <a href="">Scroll down</a>
-            <img src="./images/herowatch.png" alt="Watch" width="1150" height="500">
-        </section>
-        <section>
-            <h2>About Us</h2>
-            <p>Welcome to our premium watch collection, where luxury and style meet functionality and precision. Our
-                selection of
-                timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that you'll always
-                have a
-                reliable
-                and stylish accessory on your wrist.
-            </p>
-
-            <p>At our premium watch collection, we believe that a watch is more than just a timekeeping device – it's a
-                statement piece
-                that reflects your personality and style. So why settle for anything less than the best?
-            </p>
-            <a href="">View catalog</a>
-            <img src="./images/about-watch.png" alt="Abuot Wath" width="530" height="532">
+        <section class="main-section">
+            <div class="container main-container">
+                <div class="main-wrapper">
+                    <div class="main-wrapper-text">
+                        <h1 class="main-hero">Welcome to our <span class="main-span">collection</span> of premium
+                            watches
+                        </h1>
+                        <p class="main-text">Our watches are not just timepieces, but also an expression of your
+                            personality
+                            and
+                            lifestyle. From
+                            classic
+                            designs to
+                            modern ones, we have a watch to suit every taste and occasion.
+                        </p>
+                    </div>
+                    <div class="main-wrapper-photo">
+                        <img class="main-photo" src="./images/photo-people.png" alt="team" width="146" height="60">
+                        <a class="main-link" href="">Scroll down</a>
+                    </div>
+                </div>
+                <img src="./images/herowatch.png" alt="Watch" width="1150" height="500">
+            </div>
         </section>
 
-        <section>
-
-
-            <h2>Catalog</h2>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="./images/catalog-1.png" alt="Garmin Fenix 7X Pro Sapphire Solar" width="304"
-                            height="312">
-                    </a>
-                    <h3>Garmin Fenix 7X Pro Sapphire Solar</h3>
-                    <p>€500</p>
-                </li>
-
-                <li>
-                    <a href="">
-                        <img src="./images/catalog-2.png" alt="Garmin Marq Athlete" width="304" height="312">
-                    </a>
-                    <h3>Garmin Marq Athlete</h3>
-                    <p>€450</p>
-                </li>
-
-                <li>
-                    <a href="">
-                        <img src="./images/catalog-3.png" alt="Garmin Descent MK1" width="304" height="312">
-                    </a>
-                    <h3>Garmin Descent MK1</h3>
-                    <p>€680</p>
-                </li>
-
-                <li>
-                    <a href="">
-                        <img src="./images/catalog-4.png" alt="Garmin D2 Delta PX" width="304" height="312">
-                    </a>
-                    <h3>Garmin D2 Delta PX</h3>
-                    <p>€380</p>
-                </li>
-
-
-                <li>
-                    <a href="">
-                        <img src="./images/catalog-5.png" alt="Garmin Fenix 6 Pro Solar" width="304" height="312">
-                    </a>
-
-                    <h3>Garmin Fenix 6 Pro Solar</h3>
-                    <p>€400</p>
-                </li>
-
-
-                <li>
-                    <a href="">
-                        <img src="./images/catalog-6.png" alt="Tube Watch S42 Date Steel With Black Case" width="304"
-                            height="312">
-                    </a>
-
-                    <h3>Tube Watch S42 Date Steel With Black Case</h3>
-                    <p>€395</p>
-                </li>
-
-            </ul>
-        </section>
-
-        <section>
-            <h2>Choose your story, making every moment unique. Time is your style, and we reveal it.</h2>
-            <a href="">Contact Us</a>
-        </section>
-
-        <section>
-            <h2>Sale</h2>
-            <ul>
-                <li>
-                    <img src="./images/sale-1.png" width="96" height="100" alt="watch1">
-                </li>
-                <li>
-                    <img src="./images/sale-2.png" width="96" height="100" alt="watch2">
-                </li>
-                <li>
-                    <img src="./images/sale-3.png" width="96" height="100" alt="watch3">
-                </li>
-                <li>
-                    <img src="./images/sale-4.png" width="96" height="100" alt="watch4">
-                </li>
-            </ul>
-            <img src="./images/sale-big.png" width="328" height="398" alt="MARQ Commander (Gen 2) - Carbon Edition">
-            <h2>MARQ&reg; Commander (Gen 2) - Carbon Edition</h2>
-            <p>Product tag: 706587</p>
-            <p>€1500</p>
-            <p>€3000</p>
-            <p>The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch for adventurers that takes
-                materials and features
-                to the next level. The body of the watch is made of very durable Fused Carbon Fiber material and has a
-                precise AMOLED
-                touch screen. The sensitive touch screen is complemented by buttons that can be used in any conditions.
-            </p>
-            <ul>
-                <li>Fused carbon fiber </li>
-                <li>Grade-5 Titanuim</li>
-                <li>Athlete</li>
-                <li>Golfer</li>
-                <li>Commander</li>
-                <li>Adventurer</li>
-            </ul>
-
-
-        </section>
-
-        <section>
-            <h2>Reviews</h2>
-            <ul>
-                <li>
-                    <img src="./images/reviews1.png" width="56" height="56" alt="John Wax">
-                    <h3>John Wax</h3>
-                    <p>Buying a watch from was the best choice for me. The design is perfectly combined with high
-                        quality materials. The strap
-                        fits nicely on the hand, and the mechanism works flawlessly.
+        <section class="section-about" id="about">
+            <div class="container section-about-container">
+                <div class="section-about-content">
+                    <h2 class="section-about-hero">About Us</h2>
+                    <p>Welcome to our premium watch collection, where luxury and style meet
+                        functionality and precision. Our
+                        selection of
+                        timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that you'll
+                        always
+                        have a
+                        reliable
+                        and stylish accessory on your wrist.
                     </p>
-                </li>
-                <li>
-                    <img src="./images/reviews2.png" width="56" height="56" alt="Victoria Romashenko">
-                    <h3>Victoria Romashenko</h3>
-                    <p>Can't take my eyes off my watch from. Every time I put it on, it is admired by those around me.
-                        The build quality and
-                        attention to detail make it a real gem among my accessories.
+
+                    <p class="section-about-text">At our premium watch collection, we believe that a watch is more than
+                        just
+                        a
+                        timekeeping device – it's a
+                        statement piece
+                        that reflects your personality and style. So why settle for anything less than the best?
                     </p>
-                </li>
-                <li>
-                    <img src="./images/reviews3.png" width="56" height="56" alt="Anastasia Trachuk">
-                    <h3>Anastasia Trachuk</h3>
-                    <p>My watch from is a real masterpiece. Every detail impresses with the high quality of execution.
-                        Special features like
-                        [specify features] make it an indispensable companion in my daily life.
-                    </p>
-                </li>
-            </ul>
+                    <a class="section-about-button" href="">View catalog</a>
+                </div>
+
+                <img src="./images/about-watch.png" alt="Abuot Wath" width="530" height="532">
+            </div>
         </section>
 
-        <section>
-            <h2>Contact Us</h2>
+        <section class="catalog-section" id="catalog">
+            <div class="container">
+                <h2 class="catalog-hero">Catalog</h2>
+
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <a href="">
+                            <img src=" ./images/catalog-1.png" alt="Garmin Fenix 7X Pro Sapphire Solar" width="304"
+                                height="312">
+
+                            <h3 class="catalog-text">Garmin Fenix 7X Pro Sapphire Solar</h3>
+                            <p class="catalog-price">€500</p>
+                        </a>
+                    </li>
+
+                    <li class="catalog-item">
+                        <a href="">
+                            <img src="./images/catalog-2.png" alt="Garmin Marq Athlete" width="304" height="312">
+
+                            <h3 class="catalog-text">Garmin Marq Athlete</h3>
+                            <p class="catalog-price">€450</p>
+                        </a>
+                    </li>
+
+                    <li class="catalog-item">
+                        <a href="">
+                            <img src="./images/catalog-3.png" alt="Garmin Descent MK1" width="304" height="312">
+
+                            <h3 class="catalog-text">Garmin Descent MK1</h3>
+                            <p class="catalog-price">€680</p>
+                        </a>
+
+                    </li>
+
+                    <li class="catalog-item">
+                        <a href="">
+                            <img src="./images/catalog-4.png" alt="Garmin D2 Delta PX" width="304" height="312">
+
+                            <h3 class="catalog-text">Garmin D2 Delta PX</h3>
+                            <p class="catalog-price">€380</p>
+                        </a>
+                    </li>
+
+
+                    <li class="catalog-item">
+                        <a href="">
+                            <img src="./images/catalog-5.png" alt="Garmin Fenix 6 Pro Solar" width="304" height="312">
+
+
+                            <h3 class="catalog-text">Garmin Fenix 6 Pro Solar</h3>
+                            <p class="catalog-price">€400</p>
+                        </a>
+                    </li>
+
+
+                    <li class="catalog-item">
+                        <a href="">
+                            <img src="./images/catalog-6.png" alt="Tube Watch S42 Date Steel With Black Case"
+                                width="304" height="312">
+
+
+                            <h3 class="catalog-text">Tube Watch S42 Date Steel With Black Case</h3>
+                            <p class="catalog-price">€395</p>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="section-choose">
+            <div class="container choose-container">
+                <h2 class="section-choose-title">Choose <span class="your-story">your story</span>, making every
+                    moment unique. Time is your style, and we
+                    reveal it.
+                </h2>
+                <a class="section-choose-link" href="">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="sale-section" id="sale">
+            <div class="container">
+                <h2 class="sale-title">Sale</h2>
+                <div class="sale-container">
+
+                    <ul class="sale-list">
+                        <li class="sale-item">
+                            <img src="./images/sale-1.png" width="96" height="100" alt="watch1">
+                        </li>
+                        <li class="sale-item">
+                            <img src="./images/sale-2.png" width="96" height="100" alt="watch2">
+                        </li>
+                        <li class="sale-item">
+                            <img src="./images/sale-3.png" width="96" height="100" alt="watch3">
+                        </li>
+                        <li class="sale-item">
+                            <img src="./images/sale-4.png" width="96" height="100" alt="watch4">
+                        </li>
+                    </ul>
+
+
+                    <div class="sale-photo">
+                        <img src="./images/sale-big.png" width="328" height="398"
+                            alt="MARQ Commander (Gen 2) - Carbon Edition">
+                    </div>
+                    <div class="sale-description">
+                        <h2 class="sale-main-title">MARQ&reg; Commander (Gen 2) - Carbon Edition</h2>
+                        <p class="sale-tag">Product tag: 706587</p>
+                        <div class="price">
+                            <p class="sale-price">€1500</p>
+                            <p class="sale-before">€3000</p>
+                        </div>
+                        <p class="sale-main-text">The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
+                            for
+                            adventurers that takes
+                            materials and features
+                            to the next level. The body of the watch is made of very durable Fused Carbon Fiber material
+                            and
+                            has
+                            a
+                            precise AMOLED
+                            touch screen. The sensitive touch screen is complemented by buttons that can be used in any
+                            conditions.
+                        </p>
+                        <ul class="sale-list-feature">
+                            <li class="sale-item-feature one">Fused carbon fiber </li>
+                            <li class="sale-item-feature two">Grade-5 Titanuim</li>
+                            <li class="sale-item-feature three">Athlete</li>
+                            <li class="sale-item-feature four">Golfer</li>
+                            <li class="sale-item-feature five">Commander</li>
+                            <li class="sale-item-feature six">Adventurer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <h2 class="reviews-hero">Reviews</h2>
+                <ul class="reviews-list">
+                    <li class="reviews-item">
+                        <img src="./images/reviews1.png" width="56" height="56" alt="John Wax">
+                        <h3 class="reviews-item-hero">John Wax</h3>
+                        <p class="reviews-item-text">Buying a watch from was the best choice for me. The design is
+                            perfectly combined with high
+                            quality materials. The strap
+                            fits nicely on the hand, and the mechanism works flawlessly.
+                        </p>
+                    </li>
+                    <li class="reviews-item">
+                        <img src="./images/reviews2.png" width="56" height="56" alt="Victoria Romashenko">
+                        <h3 class="reviews-item-hero">Victoria Romashenko</h3>
+                        <p class="reviews-item-text">Can't take my eyes off my watch from. Every time I put it on, it is
+                            admired by those around
+                            me.
+                            The build quality and
+                            attention to detail make it a real gem among my accessories.
+                        </p>
+                    </li>
+                    <li class="reviews-item">
+                        <img src="./images/reviews3.png" width="56" height="56" alt="Anastasia Trachuk">
+                        <h3 class="reviews-item-hero">Anastasia Trachuk</h3>
+                        <p class="reviews-item-text">My watch from is a real masterpiece. Every detail impresses with
+                            the high quality of
+                            execution.
+                            Special features like
+                            [specify features] make it an indispensable companion in my daily life.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="contact-hero">Contact Us</h2>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <p class="contact-text">Please use the form below to contact us. Enter your name, email, phone,
+                            and message and we'll
+                            get back to you shortly.
+
+                        </p>
+                        <p class="contact-name">Name</p>
+                        <p class="contact-email">Email</p>
+                        <p class="contact-tel">+380</p>
+                        <p class="contact-comment">Comment</p>
+                        <button class="contact-button" type="submit">Send</button>
+
+                    </li>
+                    <li class="contact-item-img">
+                        <img src="./images/contact.png" alt="A black and white photo of a wristwatch standing on rocks">
+                    </li>
+                </ul>
+            </div>
+
         </section>
 
     </main>
