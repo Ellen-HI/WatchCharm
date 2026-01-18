@@ -19,7 +19,7 @@
             <nav class="header-nav">
 
                 <ul class="header-nav-list">
-                    <li class="header-nav-item"><a class="header-nav-link" href="./index.html">Home</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link current" href="./index.html">Home</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="#about">About Us</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="#catalog">Catalog</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="#sale">Sale</a></li>
@@ -30,17 +30,23 @@
             <ul class="header-social-list">
                 <li class="header-social-item">
                     <a class="header-social-link" href="" target="_blank" aria-label="facebook link">
-                        <img src="./images/facebook-head.svg" width="36" height="36" alt="facebook">
+                        <svg class="header-social-icon" width="20" height="20">
+                            <use href="./images/icon.svg#icon-Facebook"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-social-item">
                     <a class="header-social-link" href="" target="_blank" aria-label="instagram link">
-                        <img src="./images/instagram-head.svg" width="36" height="36" alt="instagram">
+                        <svg class="header-social-icon" width="20" height="20">
+                            <use href="./images/icon.svg#icon-instagram"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-social-item">
                     <a class="header-social-link" href="" target="_blank" aria-label="youtube link">
-                        <img src="./images/youtube-head.svg" width="36" height="36" alt="youtube">
+                        <svg class="header-social-icon" width="20" height="20">
+                            <use href="./images/icon.svg#icon-youTube"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -77,7 +83,7 @@
             <div class="container section-about-container">
                 <div class="section-about-content">
                     <h2 class="section-about-hero">About Us</h2>
-                    <p>Welcome to our premium watch collection, where luxury and style meet
+                    <p class="section-about-text">Welcome to our premium watch collection, where luxury and style meet
                         functionality and precision. Our
                         selection of
                         timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that you'll
@@ -175,10 +181,11 @@
 
         <section class="section-choose">
             <div class="container choose-container">
-                <h2 class="section-choose-title">Choose <span class="your-story">your story</span>, making every
+                <h2 class="visually-hidden">Choose</h2>
+                <p class="section-choose-title">Choose <span class="your-story">your story</span>, making every
                     moment unique. Time is your style, and we
                     reveal it.
-                </h2>
+                </p>
                 <a class="section-choose-link" href="">Contact Us</a>
             </div>
         </section>
@@ -279,29 +286,35 @@
             </div>
         </section>
 
-        <section class="contact-section" id="contact">
+        <section class="contact" id="contact">
             <div class="container">
-                <h2 class="contact-hero">Contact Us</h2>
-                <ul class="contact-list">
-                    <li class="contact-item">
-                        <p class="contact-text">Please use the form below to contact us. Enter your name, email, phone,
-                            and message and we'll
-                            get back to you shortly.
-
+                <h2 class="contact-title reviews-hero">Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-formcard">
+                        <p class="contact-text">
+                            Please use the form below to contact us. Enter your name, email,
+                            phone, and message and we'll get back to you shortly.
                         </p>
-                        <p class="contact-name">Name</p>
-                        <p class="contact-email">Email</p>
-                        <p class="contact-tel">+380</p>
-                        <p class="contact-comment">Comment</p>
-                        <button class="contact-button" type="submit">Send</button>
-
-                    </li>
-                    <li class="contact-item-img">
-                        <img src="./images/contact.png" alt="A black and white photo of a wristwatch standing on rocks">
-                    </li>
-                </ul>
+                        <form>
+                            <label for="name-user" class="contact-label">
+                                <input class="contact-input" type="text" placeholder="Name" name="name-user"
+                                    id="name-user" />
+                            </label>
+                            <label for="email-user" class="contact-label">
+                                <input class="contact-input" type="email" placeholder="Email" name="email-user"
+                                    id="email-user" /></label>
+                            <label for="contact-user" class="contact-label"><input class="contact-input" type="tel"
+                                    placeholder="+380" name="contact-user" id="contact-user" /></label>
+                            <label for="comment-user" class="contact-textarea-label">
+                                <textarea class="contact-input contact-comment" placeholder="Comment"
+                                    name="comment-user" id="comment-user"></textarea>
+                            </label>
+                            <button class="contact-btn-send" type="submit">Send</button>
+                        </form>
+                    </div>
+                    <img class="contact-img" src="./images/contact.png" alt="watch" width="530" height="556" />
+                </div>
             </div>
-
         </section>
 
     </main>
@@ -314,21 +327,24 @@
                     <a class="footer-logo" href="./index.html">watchcharm</a>
                     <ul class="footer-social-list">
                         <li>
-                            <a href="" target="_blank" aria-label="facebook link">
-                                <img class="footer-social-item" src="./images/facebook-foot.svg" width="36" height="36"
-                                    alt="facebook">
+                            <a class="footer-social-item" href="" target="_blank" aria-label="facebook link">
+                                <svg class="footer-icon" width="20" height="20">
+                                    <use href="./images/icon.svg#icon-Facebook"></use>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" aria-label="instagram link">
-                                <img class="footer-social-item" src="./images/instagram-foot.svg" width="36" height="36"
-                                    alt="instagram">
+                            <a class="footer-social-item" href="" target="_blank" aria-label="facebook link">
+                                <svg class="footer-icon" width="20" height="20">
+                                    <use href="./images/icon.svg#icon-instagram"></use>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" aria-label="youtube link">
-                                <img class="footer-social-item" src="./images/youtube-foot.svg" width="36" height="36"
-                                    alt="youtube">
+                            <a class="footer-social-item" href="" target="_blank" aria-label="facebook link">
+                                <svg class="footer-icon" width="20" height="20">
+                                    <use href="./images/icon.svg#icon-youTube"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
