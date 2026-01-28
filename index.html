@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a class="header-logo" href="./index.html">WatchCharm</a>
+            <a class="header-logo" href="./index.html">watchcharm</a>
             <nav class="header-nav">
 
                 <ul class="header-nav-list">
@@ -50,6 +50,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="header-btn" type="button">
+                <svg class="header-burger" width="28" height="13">
+                    <use href="./images/icon.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -71,15 +76,17 @@
                         </p>
                     </div>
                     <div class="main-wrapper-photo">
-                        <img class="main-photo" src="./images/photo-people.png" alt="team" width="146" height="60">
+                        <img class="main-photo" srcset="./images/photo-people.png 1x, ./images/photo-people@2x.png 2x"
+                            src="./images/photo-people.png" alt="team" width="146" height="60">
                         <a class="main-link" href="">Scroll down</a>
                     </div>
                 </div>
-                <img src="./images/herowatch.png" alt="Watch" width="1150" height="500">
+                <img class="main-herowatch" srcset="./images/herowatch.png 1x, ./images/herowatch@2x.png 2x"
+                    src="./images/herowatch.png" alt="Watch" width="1150" height="500">
             </div>
         </section>
 
-        <section class="section-about" id="about">
+        <!-- <section class="section-about" id="about">
             <div class="container section-about-container">
                 <div class="section-about-content">
                     <h2 class="section-about-hero">About Us</h2>
@@ -103,18 +110,20 @@
                     <a class="section-about-button" href="">View catalog</a>
                 </div>
 
-                <img src="./images/about-watch.png" alt="Abuot Wath" width="530" height="532">
+                <img srcset="./images/about-watch.png 1x, ./images/about-watch@2x.png 2x" src="./images/about-watch.png"
+                    alt="About Watch" width="530" height="532">
             </div>
-        </section>
+        </section> -->
 
-        <section class="catalog-section" id="catalog">
+        <!-- <section class="catalog-section" id="catalog">
             <div class="container">
                 <h2 class="catalog-hero">Catalog</h2>
 
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <a href="">
-                            <img src=" ./images/catalog-1.png" alt="Garmin Fenix 7X Pro Sapphire Solar" width="304"
+                            <img srcset="./images/catalog-1.png 1x, ./images/catalog-1@2x.png 2x"
+                                src=" ./images/catalog-1.png" alt="Garmin Fenix 7X Pro Sapphire Solar" width="304"
                                 height="312">
 
                             <h3 class="catalog-text">Garmin Fenix 7X Pro Sapphire Solar</h3>
@@ -124,7 +133,8 @@
 
                     <li class="catalog-item">
                         <a href="">
-                            <img src="./images/catalog-2.png" alt="Garmin Marq Athlete" width="304" height="312">
+                            <img srcset="./images/catalog-2.png 1x, ./images/catalog-2@2x.png 2x"
+                                src="./images/catalog-2.png" alt="Garmin Marq Athlete" width="304" height="312">
 
                             <h3 class="catalog-text">Garmin Marq Athlete</h3>
                             <p class="catalog-price">€450</p>
@@ -133,7 +143,8 @@
 
                     <li class="catalog-item">
                         <a href="">
-                            <img src="./images/catalog-3.png" alt="Garmin Descent MK1" width="304" height="312">
+                            <img srcset="./images/catalog-3.png 1x, ./images/catalog-3@2x.png 2x"
+                                src="./images/catalog-3.png" alt="Garmin Descent MK1" width="304" height="312">
 
                             <h3 class="catalog-text">Garmin Descent MK1</h3>
                             <p class="catalog-price">€680</p>
@@ -143,7 +154,8 @@
 
                     <li class="catalog-item">
                         <a href="">
-                            <img src="./images/catalog-4.png" alt="Garmin D2 Delta PX" width="304" height="312">
+                            <img srcset="./images/catalog-4.png 1x, ./images/catalog-4@2x.png 2x"
+                                src="./images/catalog-4.png" alt="Garmin D2 Delta PX" width="304" height="312">
 
                             <h3 class="catalog-text">Garmin D2 Delta PX</h3>
                             <p class="catalog-price">€380</p>
@@ -153,7 +165,8 @@
 
                     <li class="catalog-item">
                         <a href="">
-                            <img src="./images/catalog-5.png" alt="Garmin Fenix 6 Pro Solar" width="304" height="312">
+                            <img srcset="./images/catalog-5.png 1x, ./images/catalog-5@2x.png 2x"
+                                src="./images/catalog-5.png" alt="Garmin Fenix 6 Pro Solar" width="304" height="312">
 
 
                             <h3 class="catalog-text">Garmin Fenix 6 Pro Solar</h3>
@@ -164,8 +177,9 @@
 
                     <li class="catalog-item">
                         <a href="">
-                            <img src="./images/catalog-6.png" alt="Tube Watch S42 Date Steel With Black Case"
-                                width="304" height="312">
+                            <img srcset="./images/catalog-6.png 1x, ./images/catalog-6@2x.png 2x"
+                                src="./images/catalog-6.png" alt="Tube Watch S42 Date Steel With Black Case" width="304"
+                                height="312">
 
 
                             <h3 class="catalog-text">Tube Watch S42 Date Steel With Black Case</h3>
@@ -177,9 +191,9 @@
                 </ul>
 
             </div>
-        </section>
+        </section> -->
 
-        <section class="section-choose">
+        <!-- <section class="section-choose">
             <div class="container choose-container">
                 <h2 class="visually-hidden">Choose</h2>
                 <p class="section-choose-title">Choose <span class="your-story">your story</span>, making every
@@ -188,32 +202,36 @@
                 </p>
                 <a class="section-choose-link" href="">Contact Us</a>
             </div>
-        </section>
+        </section> -->
 
-        <section class="sale-section" id="sale">
+        <!-- <section class="sale-section" id="sale">
             <div class="container">
                 <h2 class="sale-title">Sale</h2>
                 <div class="sale-container">
 
                     <ul class="sale-list">
                         <li class="sale-item">
-                            <img src="./images/sale-1.png" width="96" height="100" alt="watch1">
+                            <img srcset="./images/sale-1.png 1x, ./images/sale-1@2x.png 2x" src="./images/sale-1.png"
+                                width="96" height="100" alt="watch1">
                         </li>
                         <li class="sale-item">
-                            <img src="./images/sale-2.png" width="96" height="100" alt="watch2">
+                            <img srcset="./images/sale-2.png 1x, ./images/sale-2@2x.png 2x" src="./images/sale-2.png"
+                                width="96" height="100" alt="watch2">
                         </li>
                         <li class="sale-item">
-                            <img src="./images/sale-3.png" width="96" height="100" alt="watch3">
+                            <img srcset="./images/sale-3.png 1x, ./images/sale-3@2x.png 2x" src="./images/sale-3.png"
+                                width="96" height="100" alt="watch3">
                         </li>
                         <li class="sale-item">
-                            <img src="./images/sale-4.png" width="96" height="100" alt="watch4">
+                            <img srcset="./images/sale-4.png 1x, ./images/sale-4@2x.png 2x" src="./images/sale-4.png"
+                                width="96" height="100" alt="watch4">
                         </li>
                     </ul>
 
 
                     <div class="sale-photo">
-                        <img src="./images/sale-big.png" width="328" height="398"
-                            alt="MARQ Commander (Gen 2) - Carbon Edition">
+                        <img srcset="./images/sale-big.png 1x, ./images/sale-big@2x.png 2x" src="./images/sale-big.png"
+                            width="328" height="398" alt="MARQ Commander (Gen 2) - Carbon Edition">
                     </div>
                     <div class="sale-description">
                         <h2 class="sale-main-title">MARQ&reg; Commander (Gen 2) - Carbon Edition</h2>
@@ -247,14 +265,15 @@
             </div>
 
 
-        </section>
+        </section> -->
 
-        <section class="reviews-section" id="reviews">
+        <!-- <section class="reviews-section" id="reviews">
             <div class="container">
                 <h2 class="reviews-hero">Reviews</h2>
                 <ul class="reviews-list">
                     <li class="reviews-item">
-                        <img src="./images/reviews1.png" width="56" height="56" alt="John Wax">
+                        <img srcset="./images/reviews1.png 1x, ./images/reviews1@2x.png 2x" src="./images/reviews1.png"
+                            width="56" height="56" alt="John Wax">
                         <h3 class="reviews-item-hero">John Wax</h3>
                         <p class="reviews-item-text">Buying a watch from was the best choice for me. The design is
                             perfectly combined with high
@@ -263,7 +282,8 @@
                         </p>
                     </li>
                     <li class="reviews-item">
-                        <img src="./images/reviews2.png" width="56" height="56" alt="Victoria Romashenko">
+                        <img srcset="./images/reviews2.png 1x, ./images/reviews2@2x.png 2x" src="./images/reviews2.png"
+                            width="56" height="56" alt="Victoria Romashenko">
                         <h3 class="reviews-item-hero">Victoria Romashenko</h3>
                         <p class="reviews-item-text">Can't take my eyes off my watch from. Every time I put it on, it is
                             admired by those around
@@ -273,7 +293,8 @@
                         </p>
                     </li>
                     <li class="reviews-item">
-                        <img src="./images/reviews3.png" width="56" height="56" alt="Anastasia Trachuk">
+                        <img srcset="./images/reviews3.png 1x, ./images/reviews3@2x.png 2x" src="./images/reviews3.png"
+                            width="56" height="56" alt="Anastasia Trachuk">
                         <h3 class="reviews-item-hero">Anastasia Trachuk</h3>
                         <p class="reviews-item-text">My watch from is a real masterpiece. Every detail impresses with
                             the high quality of
@@ -284,9 +305,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="contact" id="contact">
+        <!-- <section class="contact" id="contact">
             <div class="container">
                 <h2 class="contact-title reviews-hero">Contact Us</h2>
                 <div class="contact-content">
@@ -312,14 +333,15 @@
                             <button class="contact-btn-send" type="submit">Send</button>
                         </form>
                     </div>
-                    <img class="contact-img" src="./images/contact.png" alt="watch" width="530" height="556" />
+                    <img class="contact-img" srcset="./images/contact.png 1x, ./images/contact@2x.png 2x"
+                        src="./images/contact.png" alt="watch" width="530" height="556" />
                 </div>
             </div>
-        </section>
+        </section> -->
 
-    </main>
+        <!-- </main> -->
 
-    <footer class="footer-section">
+        <!-- <footer class="footer-section">
         <div class="container footer-container">
             <div class="footer-container-top">
 
@@ -386,7 +408,7 @@
 
         </div>
 
-    </footer>
+    </footer> -->
 </body>
 
 </html>
